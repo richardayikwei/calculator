@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+
+<body>
+    <label for="checkbox" class="switch" onclick="change()">
+        <input type="checkbox" id="checkbox" title="slidebar">
+        <span class="slider round"></span>
+    </label>
+
+    <table>
+        <tr>
+            <th colspan="4" class="screen" id="solution"></th>
+        </tr>
+
+        <tr>
+            <td>
+                <button style="background-color: rgb(186, 12, 12); color: white;" type="button" onclick="clearField()">CE</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers('/')">/</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers('*')">*</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers('-')">-</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button" onclick="numbers(1)">1</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(2)">2</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(3)">3</button>
+            </td>
+            <td rowspan="2">
+                <button style="height: 100px;" class="action-keys" type="button" onclick="numbers('+');">+</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button" onclick="numbers(4)">4</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(5)">5</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(6)">6</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <button type="button" onclick="numbers(7)">7</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(8)">8</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers(9)">9</button>
+            </td>
+            <td rowspan="2">
+                <button style="height: 100px;" class="action-keys" type="button" onclick="answer()">Enter</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button style="width: 100px;" class="action-keys" type="button" onclick="numbers(0)">0</button>
+            </td>
+            <td>
+                <button type="button" onclick="numbers('.')">.</button>
+            </td>
+        </tr>
+    </table>
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
